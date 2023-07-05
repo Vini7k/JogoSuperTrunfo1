@@ -9,7 +9,6 @@ namespace JogoSuperTrunfo1
         {
             InitializeComponent();
             cartasCarros = new List<CartaCarro>();
-
             CarregarCartas();
 
         }
@@ -26,7 +25,7 @@ namespace JogoSuperTrunfo1
                 Torque = 14.6f,
                 VelocidadeMaxima = 174,
                 Peso = 1000,
-                Imagem = "C:\\Users\\Vinícius\\source\\repos\\JogoSuperTrunfo1\\Imagens\\carta1.png"
+                Imagem = "E:\\Escola\\windows forms\\JogoSuperTrunfo1\\Imagens\\carta1.png"
             };
             cartasCarros.Add(carta1);
 
@@ -37,7 +36,7 @@ namespace JogoSuperTrunfo1
                 Torque = 12.6f,
                 VelocidadeMaxima = 157,
                 Peso = 880,
-                Imagem = "C:\\Users\\Vinícius\\source\\repos\\JogoSuperTrunfo1\\Imagens\\carta2.png"
+                Imagem = "E:\\Escola\\windows forms\\JogoSuperTrunfo1\\Imagens\\carta2.png"
             };
             cartasCarros.Add(carta2);
 
@@ -48,7 +47,7 @@ namespace JogoSuperTrunfo1
                 Torque = 29.1f,
                 VelocidadeMaxima = 215,
                 Peso = 1550,
-                Imagem = "C:\\Users\\Vinícius\\source\\repos\\JogoSuperTrunfo1\\Imagens\\carta3.png"
+                Imagem = "E:\\Escola\\windows forms\\JogoSuperTrunfo1\\Imagens\\carta3.png"
             };
             cartasCarros.Add(carta3);
 
@@ -59,7 +58,7 @@ namespace JogoSuperTrunfo1
                 Torque = 27.5f,
                 VelocidadeMaxima = 200,
                 Peso = 1570,
-                Imagem = "C:\\Users\\Vinícius\\source\\repos\\JogoSuperTrunfo1\\Imagens\\carta4.png"
+                Imagem = "E:\\Escola\\windows forms\\JogoSuperTrunfo1\\Imagens\\carta4.png"
             };
             cartasCarros.Add(carta4);
 
@@ -70,7 +69,7 @@ namespace JogoSuperTrunfo1
                 Torque = 32.5f,
                 VelocidadeMaxima = 190,
                 Peso = 1100,
-                Imagem = "C:\\Users\\Vinícius\\source\\repos\\JogoSuperTrunfo1\\Imagens\\carta5.png"
+                Imagem = "E:\\Escola\\windows forms\\JogoSuperTrunfo1\\Imagens\\carta5.png"
             };
             cartasCarros.Add(carta5);
 
@@ -81,7 +80,7 @@ namespace JogoSuperTrunfo1
                 Torque = 30.5f,
                 VelocidadeMaxima = 182,
                 Peso = 1390,
-                Imagem = "C:\\Users\\Vinícius\\source\\repos\\JogoSuperTrunfo1\\Imagens\\carta6.png"
+                Imagem = "E:\\Escola\\windows forms\\JogoSuperTrunfo1\\Imagens\\carta6.png"
             };
             cartasCarros.Add(carta6);
 
@@ -92,7 +91,7 @@ namespace JogoSuperTrunfo1
                 Torque = 19.2f,
                 VelocidadeMaxima = 203,
                 Peso = 1180,
-                Imagem = "C:\\Users\\Vinícius\\source\\repos\\JogoSuperTrunfo1\\Imagens\\carta7.png"
+                Imagem = "E:\\Escola\\windows forms\\JogoSuperTrunfo1\\Imagens\\carta7.png"
             };
             cartasCarros.Add(carta7);
 
@@ -103,7 +102,7 @@ namespace JogoSuperTrunfo1
                 Torque = 20.4f,
                 VelocidadeMaxima = 207,
                 Peso = 1288,
-                Imagem = "C:\\Users\\Vinícius\\source\\repos\\JogoSuperTrunfo1\\Imagens\\carta8.png"
+                Imagem = "E:\\Escola\\windows forms\\JogoSuperTrunfo1\\Imagens\\carta8.png"
             };
             cartasCarros.Add(carta8);
 
@@ -114,7 +113,7 @@ namespace JogoSuperTrunfo1
                 Torque = 17.7f,
                 VelocidadeMaxima = 181,
                 Peso = 1116,
-                Imagem = "C:\\Users\\Vinícius\\source\\repos\\JogoSuperTrunfo1\\Imagens\\carta9.png"
+                Imagem = "E:\\Escola\\windows forms\\JogoSuperTrunfo1\\Imagens\\carta9.png"
             };
             cartasCarros.Add(carta9);
 
@@ -125,7 +124,7 @@ namespace JogoSuperTrunfo1
                 Torque = 18.9f,
                 VelocidadeMaxima = 184,
                 Peso = 1138,
-                Imagem = "C:\\Users\\Vinícius\\source\\repos\\JogoSuperTrunfo1\\Imagens\\carta10.png"
+                Imagem = "E:\\Escola\\windows forms\\JogoSuperTrunfo1\\Imagens\\carta10.png"
             };
             cartasCarros.Add(carta10);
 
@@ -164,13 +163,42 @@ namespace JogoSuperTrunfo1
                 vezJogador = true;
             }
         }
-        private void proximaRodada()
+        /* private void proximaRodada()
+         {
+             Random random = new Random();
+             int index1 = random.Next(cartasJogador.Count);
+             int index2 = random.Next(cartasMaquina.Count);
+
+             CartaCarro cartaJogada1 = cartasJogador[index1];
+             CartaCarro cartaJogada2 = cartasMaquina[index2];
+             pictureBox1.Image = Image.FromFile(cartaJogada1.Imagem);
+             pictureBox1.Tag = index1;
+
+             Adiciona o verso da carta ao picturebox2:
+             pictureBox2.Image = Image.FromFile("F:\\Escola\\windows forms\\JogoSuperTrunfo1\\Imagens\\cartaVerso.png");
+         }*/
+        private void proximaRodadaJogador()
+        {
+            Random random = new Random();
+            int index1 = random.Next(cartasJogador.Count);
+
+            CartaCarro cartaJogada1 = cartasJogador[index1];
+            pictureBox1.Image = Image.FromFile(cartaJogada1.Imagem);
+            pictureBox1.Tag = index1;
+
+        }
+        private void proximaRodadaMaquina()
         {
 
             Random random = new Random();
-            int index1 = random.Next(cartasJogador.Count);
             int index2 = random.Next(cartasMaquina.Count);
 
+            CartaCarro cartaJogada2 = cartasMaquina[index2];
+            pictureBox2.Tag = index2;
+            pictureBox2.Image = Image.FromFile("E:\\Escola\\windows forms\\JogoSuperTrunfo1\\Imagens\\cartaVerso.png");
+        }
+        private void acabaJogo()
+        {
             if (cartasMaquina.Count == 0)
             {
                 MessageBox.Show("VOCE GANHOU O JOGO");
@@ -181,16 +209,9 @@ namespace JogoSuperTrunfo1
                 MessageBox.Show("VOCE PERDEU O JOGO");
                 Application.Exit();
             }
-            CartaCarro cartaJogada1 = cartasJogador[index1];
-            CartaCarro cartaJogada2 = cartasMaquina[index2];
-
-            pictureBox1.Image = Image.FromFile(cartaJogada1.Imagem);
-            pictureBox1.Tag = index1;
-            pictureBox2.Image = Image.FromFile("C:\\Users\\Vinícius\\source\\repos\\JogoSuperTrunfo1\\Imagens\\cartaVerso.png");
         }
         private void compararCartas()
         {
-
             int index1 = (int)pictureBox1.Tag;
             int index2 = (int)pictureBox2.Tag;
 
@@ -198,12 +219,12 @@ namespace JogoSuperTrunfo1
             CartaCarro cartaJogada2 = cartasMaquina[index2];
 
             List<RadioButton> listaAtributos = new List<RadioButton>
-                {
+            {
                 Atributo1,
                 Atributo2,
                 Atributo3,
                 Atributo4,
-                };
+            };
 
             if (listaAtributos[0].Checked)
             {
@@ -215,13 +236,16 @@ namespace JogoSuperTrunfo1
                     cartasJogador.Add(cartasMaquina[index2]);
                     cartasMaquina.Remove(cartasMaquina[index2]);
                     quantidadeCartas();
-                    proximaRodada();
+                    acabaJogo();
+                    proximaRodadaJogador();
+                    proximaRodadaMaquina();
 
                 }
                 else if (cartaJogada1.VelocidadeMaxima == cartaJogada2.VelocidadeMaxima)
                 {
                     MessageBox.Show("empate");
-                    proximaRodada();
+                    proximaRodadaJogador();
+                    proximaRodadaMaquina();
                 }
                 else
                 {
@@ -229,7 +253,9 @@ namespace JogoSuperTrunfo1
                     cartasMaquina.Add(cartasJogador[index1]);
                     cartasJogador.Remove(cartasJogador[index1]);
                     quantidadeCartas();
-                    proximaRodada();
+                    acabaJogo();
+                    proximaRodadaMaquina();
+                    proximaRodadaJogador();
                 }
 
             }
@@ -243,12 +269,15 @@ namespace JogoSuperTrunfo1
                     cartasJogador.Add(cartasMaquina[index2]);
                     cartasMaquina.Remove(cartasMaquina[index2]);
                     quantidadeCartas();
-                    proximaRodada();
+                    acabaJogo();
+                    proximaRodadaMaquina();
+                    proximaRodadaJogador();
                 }
                 else if (cartaJogada1.Potencia == cartaJogada2.Potencia)
                 {
                     MessageBox.Show("empate");
-                    proximaRodada();
+                    proximaRodadaMaquina();
+                    proximaRodadaJogador();
                 }
                 else
                 {
@@ -256,7 +285,9 @@ namespace JogoSuperTrunfo1
                     cartasMaquina.Add(cartasJogador[index1]);
                     cartasJogador.Remove(cartasJogador[index1]);
                     quantidadeCartas();
-                    proximaRodada();
+                    acabaJogo();
+                    proximaRodadaMaquina();
+                    proximaRodadaJogador();
                 }
 
             }
@@ -270,12 +301,15 @@ namespace JogoSuperTrunfo1
                     cartasJogador.Add(cartasMaquina[index2]);
                     cartasMaquina.Remove(cartasMaquina[index2]);
                     quantidadeCartas();
-                    proximaRodada();
+                    acabaJogo();
+                    proximaRodadaMaquina();
+                    proximaRodadaJogador();
                 }
                 else if (cartaJogada1.Peso == cartaJogada2.Peso)
                 {
                     MessageBox.Show("empate");
-                    proximaRodada();
+                    proximaRodadaMaquina();
+                    proximaRodadaJogador();
                 }
                 else
                 {
@@ -283,7 +317,9 @@ namespace JogoSuperTrunfo1
                     cartasMaquina.Add(cartasJogador[index1]);
                     cartasJogador.Remove(cartasJogador[index1]);
                     quantidadeCartas();
-                    proximaRodada();
+                    acabaJogo();
+                    proximaRodadaMaquina();
+                    proximaRodadaJogador();
                 }
 
             }
@@ -297,12 +333,15 @@ namespace JogoSuperTrunfo1
                     cartasJogador.Add(cartasMaquina[index2]);
                     cartasMaquina.Remove(cartasMaquina[index2]);
                     quantidadeCartas();
-                    proximaRodada();
+                    acabaJogo();
+                    proximaRodadaMaquina();
+                    proximaRodadaJogador();
                 }
                 else if (cartaJogada1.Torque == cartaJogada2.Torque)
                 {
                     MessageBox.Show("empate");
-                    proximaRodada();
+                    proximaRodadaMaquina();
+                    proximaRodadaJogador();
                 }
                 else
                 {
@@ -310,17 +349,17 @@ namespace JogoSuperTrunfo1
                     cartasMaquina.Add(cartasJogador[index1]);
                     cartasJogador.Remove(cartasJogador[index1]);
                     quantidadeCartas();
-                    proximaRodada();
+                    acabaJogo();
+                    proximaRodadaMaquina();
+                    proximaRodadaJogador();
                 }
             }
-
-
         }
         private void sortearCartaJogada()
         {
             Random random = new Random();
-            int index1 = random.Next(cartasCarros.Count);
-            int index2 = random.Next(cartasCarros.Count);
+            int index1 = random.Next(cartasJogador.Count);
+            int index2 = random.Next(cartasMaquina.Count);
 
             CartaCarro cartaJogada1 = cartasJogador[index1];
             CartaCarro cartaJogada2 = cartasMaquina[index2];
@@ -329,7 +368,6 @@ namespace JogoSuperTrunfo1
             pictureBox1.Tag = index1;
 
             pictureBox2.Tag = index2;
-
         }
         private void botaoSortear_Click(object sender, EventArgs e)
         {

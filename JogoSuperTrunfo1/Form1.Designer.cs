@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             botaoSortear = new Button();
             lblCartasMaquina = new Label();
             lblCartasJogador = new Label();
@@ -47,11 +48,12 @@
             // 
             // botaoSortear
             // 
-            botaoSortear.BackColor = SystemColors.ControlText;
-            botaoSortear.BackgroundImage = Properties.Resources.CHEVROLET_KADETT;
+            botaoSortear.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            botaoSortear.BackColor = Color.DarkSlateBlue;
+            botaoSortear.BackgroundImage = Properties.Resources.ImagemFundoResources2;
             botaoSortear.BackgroundImageLayout = ImageLayout.Stretch;
             botaoSortear.Font = new Font("Gill Sans Ultra Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            botaoSortear.ForeColor = SystemColors.ControlLightLight;
+            botaoSortear.ForeColor = Color.DarkSlateBlue;
             botaoSortear.Location = new Point(403, 162);
             botaoSortear.Name = "botaoSortear";
             botaoSortear.Size = new Size(122, 52);
@@ -63,10 +65,9 @@
             // lblCartasMaquina
             // 
             lblCartasMaquina.BackColor = Color.FromArgb(119, 46, 158);
-            lblCartasMaquina.BorderStyle = BorderStyle.Fixed3D;
             lblCartasMaquina.Font = new Font("Segoe UI", 25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCartasMaquina.ForeColor = SystemColors.Control;
-            lblCartasMaquina.Image = Properties.Resources.CHEVROLET_KADETT;
+            lblCartasMaquina.ForeColor = Color.DarkSlateBlue;
+            lblCartasMaquina.Image = Properties.Resources.ImagemFundoResources;
             lblCartasMaquina.Location = new Point(689, 46);
             lblCartasMaquina.Name = "lblCartasMaquina";
             lblCartasMaquina.Size = new Size(52, 54);
@@ -78,10 +79,9 @@
             // lblCartasJogador
             // 
             lblCartasJogador.BackColor = Color.FromArgb(119, 46, 158);
-            lblCartasJogador.BorderStyle = BorderStyle.Fixed3D;
             lblCartasJogador.Font = new Font("Segoe UI", 25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCartasJogador.ForeColor = SystemColors.Control;
-            lblCartasJogador.Image = Properties.Resources.CHEVROLET_KADETT;
+            lblCartasJogador.ForeColor = Color.DarkSlateBlue;
+            lblCartasJogador.Image = Properties.Resources.ImagemFundoResources;
             lblCartasJogador.Location = new Point(329, 46);
             lblCartasJogador.Name = "lblCartasJogador";
             lblCartasJogador.Size = new Size(52, 54);
@@ -92,11 +92,11 @@
             // 
             // botaoComparar
             // 
-            botaoComparar.BackColor = SystemColors.ControlText;
-            botaoComparar.BackgroundImage = Properties.Resources.CHEVROLET_KADETT;
+            botaoComparar.BackColor = Color.DarkSlateBlue;
+            botaoComparar.BackgroundImage = Properties.Resources.ImagemFundoResources2;
             botaoComparar.BackgroundImageLayout = ImageLayout.Stretch;
             botaoComparar.Font = new Font("Gill Sans Ultra Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            botaoComparar.ForeColor = SystemColors.ControlLightLight;
+            botaoComparar.ForeColor = Color.DarkSlateBlue;
             botaoComparar.Location = new Point(403, 318);
             botaoComparar.Name = "botaoComparar";
             botaoComparar.Size = new Size(122, 52);
@@ -108,7 +108,7 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = SystemColors.ControlText;
-            pictureBox1.BackgroundImage = Properties.Resources.cartaVerso;
+            pictureBox1.BackgroundImage = Properties.Resources.cartaVerso2;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Location = new Point(175, 109);
             pictureBox1.Name = "pictureBox1";
@@ -120,7 +120,7 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = SystemColors.ControlText;
-            pictureBox2.BackgroundImage = Properties.Resources.cartaVerso;
+            pictureBox2.BackgroundImage = Properties.Resources.cartaVerso2;
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox2.Location = new Point(540, 109);
             pictureBox2.Name = "pictureBox2";
@@ -132,10 +132,10 @@
             // Atributo1
             // 
             Atributo1.BackColor = SystemColors.ControlText;
-            Atributo1.BackgroundImage = Properties.Resources.CHEVROLET_KADETT;
+            Atributo1.BackgroundImage = Properties.Resources.ImagemFundoResources2;
             Atributo1.BackgroundImageLayout = ImageLayout.Stretch;
             Atributo1.Font = new Font("Gill Sans Ultra Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            Atributo1.ForeColor = SystemColors.ControlLightLight;
+            Atributo1.ForeColor = Color.DarkSlateBlue;
             Atributo1.Location = new Point(12, 119);
             Atributo1.Name = "Atributo1";
             Atributo1.Size = new Size(147, 52);
@@ -148,10 +148,10 @@
             // Atributo2
             // 
             Atributo2.BackColor = SystemColors.ControlText;
-            Atributo2.BackgroundImage = Properties.Resources.CHEVROLET_KADETT;
+            Atributo2.BackgroundImage = Properties.Resources.ImagemFundoResources2;
             Atributo2.BackgroundImageLayout = ImageLayout.Stretch;
             Atributo2.Font = new Font("Gill Sans Ultra Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            Atributo2.ForeColor = SystemColors.ControlLightLight;
+            Atributo2.ForeColor = Color.DarkSlateBlue;
             Atributo2.Location = new Point(12, 177);
             Atributo2.Name = "Atributo2";
             Atributo2.Size = new Size(114, 37);
@@ -164,10 +164,10 @@
             // Atributo3
             // 
             Atributo3.BackColor = SystemColors.ControlText;
-            Atributo3.BackgroundImage = Properties.Resources.CHEVROLET_KADETT;
+            Atributo3.BackgroundImage = Properties.Resources.ImagemFundoResources2;
             Atributo3.BackgroundImageLayout = ImageLayout.Stretch;
             Atributo3.Font = new Font("Gill Sans Ultra Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            Atributo3.ForeColor = SystemColors.ControlLightLight;
+            Atributo3.ForeColor = Color.DarkSlateBlue;
             Atributo3.Location = new Point(12, 220);
             Atributo3.Name = "Atributo3";
             Atributo3.Size = new Size(78, 37);
@@ -180,10 +180,10 @@
             // Atributo4
             // 
             Atributo4.BackColor = SystemColors.ControlText;
-            Atributo4.BackgroundImage = Properties.Resources.CHEVROLET_KADETT;
+            Atributo4.BackgroundImage = Properties.Resources.ImagemFundoResources2;
             Atributo4.BackgroundImageLayout = ImageLayout.Stretch;
             Atributo4.Font = new Font("Gill Sans Ultra Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            Atributo4.ForeColor = SystemColors.ControlLight;
+            Atributo4.ForeColor = Color.DarkSlateBlue;
             Atributo4.Location = new Point(12, 263);
             Atributo4.Name = "Atributo4";
             Atributo4.Size = new Size(98, 37);
@@ -195,11 +195,11 @@
             // 
             // botaoSortearJogada
             // 
-            botaoSortearJogada.BackColor = SystemColors.ControlText;
-            botaoSortearJogada.BackgroundImage = Properties.Resources.CHEVROLET_KADETT;
+            botaoSortearJogada.BackColor = Color.DarkSlateBlue;
+            botaoSortearJogada.BackgroundImage = Properties.Resources.ImagemFundoResources2;
             botaoSortearJogada.BackgroundImageLayout = ImageLayout.Stretch;
             botaoSortearJogada.Font = new Font("Gill Sans Ultra Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            botaoSortearJogada.ForeColor = SystemColors.ControlLightLight;
+            botaoSortearJogada.ForeColor = Color.DarkSlateBlue;
             botaoSortearJogada.Location = new Point(403, 236);
             botaoSortearJogada.Name = "botaoSortearJogada";
             botaoSortearJogada.Size = new Size(122, 55);
@@ -212,9 +212,11 @@
             // 
             label1.BackColor = Color.FromArgb(119, 46, 158);
             label1.Font = new Font("Gill Sans Ultra Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.ControlLightLight;
+            label1.ForeColor = Color.DarkSlateBlue;
+            label1.Image = Properties.Resources.ImagemFundoResources;
             label1.Location = new Point(540, 46);
             label1.Name = "label1";
+            label1.RightToLeft = RightToLeft.Yes;
             label1.Size = new Size(127, 54);
             label1.TabIndex = 12;
             label1.Text = "CARTAS MÁQUINA";
@@ -223,7 +225,8 @@
             // 
             label2.BackColor = Color.FromArgb(119, 46, 158);
             label2.Font = new Font("Gill Sans Ultra Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.ControlLightLight;
+            label2.ForeColor = Color.DarkSlateBlue;
+            label2.Image = Properties.Resources.ImagemFundoResources;
             label2.Location = new Point(175, 46);
             label2.Name = "label2";
             label2.Size = new Size(127, 54);
@@ -236,7 +239,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = SystemColors.ControlDarkDark;
-            BackgroundImage = Properties.Resources.imagemFundo;
+            BackgroundImage = Properties.Resources.ImagemCarrosFundo__2_;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(label2);
@@ -252,6 +255,8 @@
             Controls.Add(lblCartasJogador);
             Controls.Add(lblCartasMaquina);
             Controls.Add(botaoSortear);
+            ForeColor = Color.DarkSlateBlue;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

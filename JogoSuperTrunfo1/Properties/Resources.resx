@@ -118,6 +118,27 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ImagemCarrosFundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImagemCarrosFundo.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImagemVolanteFundo (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImagemVolanteFundo (2).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImagemFundoResources2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImagemFundoResources2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CHEVROLET KADETT (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CHEVROLET KADETT (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImagemCarrosFundo (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImagemCarrosFundo (2).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImagemVolanteFundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImagemVolanteFundo.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImagemFundoResources" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImagemFundoResources.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cartaVerso" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cartaVerso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -126,5 +147,11 @@
   </data>
   <data name="CHEVROLET KADETT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CHEVROLET KADETT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaVerso1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cartaVerso1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaVerso2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cartaVerso2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -73,6 +73,26 @@ namespace JogoSuperTrunfo1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cartaVerso1 {
+            get {
+                object obj = ResourceManager.GetObject("cartaVerso1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cartaVerso2 {
+            get {
+                object obj = ResourceManager.GetObject("cartaVerso2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CHEVROLET_KADETT {
             get {
                 object obj = ResourceManager.GetObject("CHEVROLET KADETT", resourceCulture);
@@ -83,9 +103,79 @@ namespace JogoSuperTrunfo1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CHEVROLET_KADETT__1_ {
+            get {
+                object obj = ResourceManager.GetObject("CHEVROLET KADETT (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ImagemCarrosFundo {
+            get {
+                object obj = ResourceManager.GetObject("ImagemCarrosFundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ImagemCarrosFundo__2_ {
+            get {
+                object obj = ResourceManager.GetObject("ImagemCarrosFundo (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imagemFundo {
             get {
                 object obj = ResourceManager.GetObject("imagemFundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ImagemFundoResources {
+            get {
+                object obj = ResourceManager.GetObject("ImagemFundoResources", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ImagemFundoResources2 {
+            get {
+                object obj = ResourceManager.GetObject("ImagemFundoResources2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ImagemVolanteFundo {
+            get {
+                object obj = ResourceManager.GetObject("ImagemVolanteFundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ImagemVolanteFundo__2_ {
+            get {
+                object obj = ResourceManager.GetObject("ImagemVolanteFundo (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
